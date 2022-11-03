@@ -48,7 +48,7 @@ public function routeParam(String $nom): Response
         if (!$article) {
             return $this->redirectToRoute("home");
         }
-        return $this->render('show/index.html.twig', [
+        return $this->render('home/show.html.twig', [
             "article" => $article
         ]);
     }
