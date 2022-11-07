@@ -34,8 +34,8 @@ class HomeController extends AbstractController
 
 
     /**
-     * @Route("/}", name="home")
-     */
+     * @Route("/", name="home")
+     */
     public function index(CategoryRepository $repoCategory): Response
     {
         $categories = $repoCategory->findAll();
